@@ -64,7 +64,7 @@ def run(author: str, bookname: str, year: str, s_flag: bool, version: str):
     elif version:
         print(f"version {version}")
     else:
-        year = str(year)
+        year = str(year) if year else None
         result = Connect().find_book((author, bookname, year))
         if not result:
             print("No result found.")
