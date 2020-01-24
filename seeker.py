@@ -51,7 +51,7 @@ def pretty_print(result: list) -> None:
         print(
             str(num).rjust(len_num, fill),
             author.ljust(len_author, fill),
-            year.ljust(10, fill),
+            year.ljust(10, fill) if year else "".ljust(10, fill)
             book,
             sep=" | ",
         )
