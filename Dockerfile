@@ -14,5 +14,3 @@ COPY seeker.py .
 COPY wiper.py .
 COPY db_methods.py .
 COPY config.ini .
-
-CMD ["python3"]
